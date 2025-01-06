@@ -1,0 +1,14 @@
+body{
+    background-color: turquoise;
+    
+}
+.father{
+    display: flex;
+   
+    gap:10px;
+}
+.box{
+    width: 200px;
+    height:100px;
+    background-color: black;
+}
