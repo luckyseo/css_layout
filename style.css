@@ -1,63 +1,73 @@
-body{
+body {
+    background-color: #f6f6f6;
+    padding: 50px 25px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     max-width: 770px;
     width: 100%;
-    display: grid;
-    height: 1008px;
-    grid-template: 
-    "header" 110px
-    "main" 8fr/ 1fr;
-    background-color: #dce0d5;
-    margin: 20px;
-}
-header{
+    margin: 0 auto;
+  }
+div{ /*align center for Ostrich Letter*/
     display:flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    background-color: black;
-    color: white;
-    margin-bottom:20px;
-    padding-left:10px;
-    padding-top:10px;
-}
-h3{
-    width:33%;
-    margin-bottom: 10px;
-    font-weight: 300;
-    margin-top:0px;
-    font-size: medium;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight:bold;
+  }
+  
+  main{
+    width:980px;
+    height:555px;
+    display: grid;
+    grid-template:
+        "mint green" 1fr
+        "tomato babies" 1fr/1fr 1fr;
+  }
+
+.withBabies{
+    display:grid;
+    grid-template:
+        "pink purple" 1fr
+        "yellow hotPink" 1fr/ 1fr 1fr;
+    align-items: stretch;
 }
 
-main{
-    display: grid;
-    grid-template-columns: 435fr 220fr;
-    grid-template-rows: 450px 380fr;
-    gap: 20px;
-    background-color: #dce0d5;
+.bigOstrich:first-child{
+    grid-area: mint;
+    background-color:  #dae8df;
+    color:tomato;
 }
-main div{
-    background-color:#f03d11;
-    padding-left: 15px;
+.bigOstrich:nth-child(2){
+    grid-area: green;
+    background-color: green;
+    color:white;
 }
-main div:first-child{
-    display:flex;
-    align-items: flex-end;
-    margin:0px;
+.bigOstrich:nth-child(3){
+    grid-area: tomato;
+    background-color: tomato;
+    color:white;
 }
-main div h1{
-    font-size: 210px;
-    margin:0px;
+.babyOstrich{
+    font-size:large;
+    font-weight: 600;
 }
-main div:last-child{
-    display: flex;
-    flex-direction: column;
-    grid-column: 1/-1;
+.babyOstrich:nth-child(1){
+    grid-area: pink;
+    background-color: pink;
+    color:tomato;
 }
-
-main div:last-child h2{
-    color:#dce0d5;
-    font-weight: 500;
-    font-size: 40px;
-    margin:0px;
+.babyOstrich:nth-child(2){
+    grid-area: purple;
+    background-color: #5e5ea8;
+    color:white;
+}
+.babyOstrich:nth-child(3){
+    grid-area:yellow;
+    background-color: #ffc226;
+    color:tomato;
+}
+.babyOstrich:nth-child(4){
+    grid-area:hotPink;
+    background-color:#fa7373;
+    color:white;
 }
