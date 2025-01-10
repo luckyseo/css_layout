@@ -8,17 +8,68 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main>
-      <div class="bigOstrich">Ostrich</div>
-      <div class="bigOstrich">Ostrich</div>
-      <div class="bigOstrich">Ostrich</div>
-      <div class="bigOstrich withBabies">
-        <div class="babyOstrich">Ostrich</div>
-        <div class="babyOstrich">Ostrich</div>
-        <div class="babyOstrich">Ostrich</div>
-        <div class="babyOstrich">Ostrich</div>
-      </div>
-    </main>
-    
+    <div class="c">
+      <h3>Tools for Slowing Down</h3>
+      <h4>Chloe Geoghegan & Chole Reith</h4>
+    </div class="c">
+    <div class="img"></div>
+    <div class="c">
+      <h3>The (Olf) New Spirit of Curating and Myths of Nomadism</h3>
+      <h4>Tim Gentles</h4>
+    </div>
+    <div class="img"></div>
+    <div class="c">
+      <h3>Pressing Singularities</h3>
+      <h4>Tendai John Mutambu & Robyn Maree Pickens</h4>
+    </div>
+    <div class="c">
+      <h3>We're in This Together</h3>
+      <h4>Vera Mey</h4>
+    </div>
+    <div class="c">
+      <h3>The Curatorial as a Liveable Subject Position: Hospitality and Differential Consciousness</h3>
+      <h4>Danny Butt</h4>
+    </div>
+    <div class="c">
+      <h3>Community, Community Art, Community Art in Howick</h3>
+      <h4>Balamohan Shingade</h4>
+    </div>
+    <div class="img"></div>
+    <div class="c">
+      <h3>Feeling Welcome?</h3>
+      <h4>Lousia Afoa & loana Gordan-Smith</h4>
+    </div>
+    <div class="img"></div>
+    <div class="c">
+      <h3>On Friendship</h3>
+      <h4>Rebecca Boswell</h4>
+    </div>
+    <script>
+      const colors=[ "#c0bca7", "#fd4713", "#847f96", "#d0fe72", "#e3c4e6", "#993432" ,"#39aafa","#408f79"]
+      function randomColor(){
+        divs = document.querySelectorAll(".c")
+        console.log(divs)
+        for(let div=0;div<divs.length;div++){
+          const random = Math.floor(Math.random()*colors.length)
+          console.log(random)
+          divs[div].style.backgroundColor = colors[random];
+          console.log(divs[div].style.backgroundColor)
+        }
+      }
+      randomColor()
+
+      
+      function randomImg(){
+      const imgs = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
+      const divs = document.querySelectorAll(".img");
+        for(let div =0; div<divs.length;div++){
+          const random = Math.floor(Math.random()*imgs.length)
+          const bgImg = document.createElement("img");
+          divs[div].appendChild(bgImg);
+          bgImg.src = `img/${imgs[random]}`
+        }
+      }
+      randomImg()
+    </script>
   </body>
 </html>
