@@ -8,69 +8,86 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="c">
-      <h3>Tools for Slowing Down</h3>
-      <h4>Chloe Geoghegan & Chole Reith</h4>
-    </div class="c">
-    <div class="img"></div>
-    <div class="c">
-      <h3>The (Olf) New Spirit of Curating and Myths of Nomadism</h3>
-      <h4>Tim Gentles</h4>
-    </div>
-    <div class="img"></div>
-    <div class="c">
-      <h3>Pressing Singularities</h3>
-      <h4>Tendai John Mutambu & Robyn Maree Pickens</h4>
-    </div>
-    <div class="c">
-      <h3>We're in This Together</h3>
-      <h4>Vera Mey</h4>
-    </div>
-    <div class="c">
-      <h3>The Curatorial as a Liveable Subject Position: Hospitality and Differential Consciousness</h3>
-      <h4>Danny Butt</h4>
-    </div>
-    <div class="c">
-      <h3>Community, Community Art, Community Art in Howick</h3>
-      <h4>Balamohan Shingade</h4>
-    </div>
-    <div class="img"></div>
-    <div class="c">
-      <h3>Feeling Welcome?</h3>
-      <h4>Lousia Afoa & loana Gordan-Smith</h4>
-    </div>
-    <div class="img"></div>
-    <div class="c">
-      <h3>On Friendship</h3>
-      <h4>Rebecca Boswell</h4>
-    </div>
-    <script>
-      const colors=[ "#c0bca7", "#fd4713", "#847f96", "#d0fe72", "#e3c4e6", "#993432" ,"#39aafa","#408f79"]
-      function randomColor(){
-        divs = document.querySelectorAll(".c")
-        console.log(divs)
-        for(let div=0;div<divs.length;div++){
-          const random = Math.floor(Math.random()*colors.length)
-          console.log(random)
-          divs[div].style.backgroundColor = colors[random];
-          console.log(divs[div].style.backgroundColor)
-        }
-      }
-      randomColor()
-
-      
-      function randomImg(){
-      const imgs = ["img1.jpg","img2.jpg","img3.jpg","img4.jpg"];
-      const divs = document.querySelectorAll(".img");
-        for(let div =0; div<divs.length;div++){
-          const random = Math.floor(Math.random()*imgs.length)
-          const bgImg = document.createElement("img");
-          divs[div].appendChild(bgImg);
-          bgImg.src = `img/${imgs[random]}`
-        }
-      }
-      randomImg()
-    </script>
-  <!--  challenge 5 img file  https://github.com/luckyseo/css_layout/commit/3aca049253f94007fd625738e143623a35825f4d-->
+    <main>
+      <div class="row title">
+        <pre>
+          CH<span>A</span>N<span>G</span>ES
+          CHANGES
+          CH<span>A</span>N<span>G</span>ES
+          CHANGES
+          JULY4-5
+        </pre>
+      </div>
+      <div class="row menu">
+        <pre>
+          ABOUT 
+          CONTACT
+          VENUES
+          FAQ
+          PARTNERS
+        </pre>
+      </div>
+      <div class="row purple"></div>
+      <div class="row white"></div>
+      <div class="row tickets">
+        <h2>TICKETS</h2>
+      </div>
+      <div class="col speakers">
+        <span>SPEAKERS</span>
+        <ul>ABBY GEE</ul>
+        <ul>ALEX YABSLEY</ul>
+        <ul>ALEX ZACCARIA</ul>
+        <ul>ALLEGRA CALDWELL</ul>
+        <ul>BEATRICE</ul>
+        <ul class="mouse">BRIGID DIXON</ul>
+        <ul>CARLY JAMES [US]</ul>
+        <ul>CHERIE HU [US]</ul>
+        <ul>CHRIS MYLRAE</ul>
+        <ul>CHRISTIE MORGAN</ul>
+        <ul>CHRISTOPHER</ul>
+        <ul>MURATORE [US]</ul>
+        <ul>DANIELLE LEVY [US]</ul>
+        <ul>DAVE “DIZZ1” NORRIS</ul>
+        <ul>DAVID BENGE [NZ]</ul>
+        <ul>DAVID RAY</ul>
+        <ul>GARETH SMITH [US]</ul>
+        <ul>JENN PELLY [US]</ul>
+        <ul>JOSEPH EDWARD</ul>
+        <ul>KEYES [US]</ul>
+        <ul>KAT DOPPER</ul>
+        <ul>KATE DUNCAN</ul>
+        <ul>LORRAE MCKENNA</ul>
+        <ul>MARIHUZKA</ul>
+        <ul>CORNELIUS</ul>
+        <ul>MARKELL CASEY [US]</ul>
+      </div>
+      <div class="col artists">
+        <span>ARTISTS</span>
+        <ul>808S AND GREATEST HITS</ul>
+        <ul>ACTIVITIES OF DAILY LIVING</ul>
+        <ul>ALEXANDER BIGGS</ul>
+        <ul>ALICE SKYE</ul>
+        <ul>AUSMUTEANTS</ul>
+        <ul>BABY</ul>
+        <ul>BENCH PRESS</ul>
+        <ul>BIRDZ</ul>
+        <ul>BONES AND JONES</ul>
+        <ul>CABLE TIES</ul>
+        <ul>CHAPEL</ul>
+        <ul>CIVIC</ul>
+        <ul>CLEOPOLD</ul>
+        <ul>DARCY BAYLIS</ul>
+        <ul>DARK FAIR</ul>
+        <ul>DIANAS</ul>
+        <ul>DIET</ul>
+        <ul>DRMNGNOW</ul>
+        <ul>EAST BRUNSWICK ALL GIRLS CHOIR</ul>
+        <ul>EILISH GILLIGAN</ul>
+        <ul>ELIZABETH</ul>
+        <ul>EVAN KLAR</ul>
+        <ul>EVELYN IDA MORRIS</ul>
+        <ul>FRASER A. GORMAN</ul>
+      </div>
+    </main>
   </body>
 </html>
