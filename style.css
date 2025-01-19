@@ -3,163 +3,18 @@ body {
   padding: 50px 25px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-  width: 90%;
+  max-width: 770px;
+  width: 100%;
   margin: 0 auto;
-  height:80%;
-  display: grid;
-  /*420:25:255 84:5:51*/
-  grid-template-columns: 84fr 5fr 51fr;
 
+  border:1px solid black;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
 }
-/*Events section CSS*/
-#events{
-  display:grid;
-  grid-template-rows:repeat(auto-fit, minmax(85px,1fr));
-  gap:2px;
-  background-color:red;
-  border: 2px solid red;
- 
+#pictures{
+  grid-column: 3/-1;
 }
-.box{
-  display:grid;
-  background-color:red;
-  gap:2px;
-  grid-template-columns: 27fr 415fr 145fr;
-  grid-template-rows: repeat(2,auto);
-}
-.box:hover,
-.box:hover .title,
-.box:hover .sector,
-.box:hover .usage,
-.box:hover .year{
-  color: white;
-}
-.box:hover .year span{
-  background-color: white;
-  color: #ff8103;
-}
-.box:hover{
-  box-shadow: 0px 2px 3px white, 0px -2px 3px white, 2px 0px 3px white, -2px 0px 3px white;
-  background-color: white;
-}
-.box div,h2{
-  background-color: #ff8103;
-}
-.box .sector{
-  font-size: x-small;
-  color:red;
-  grid-row: 1/-1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-}
-.title{ 
-  grid-column: 2/3;
-  grid-row:1/-1;
-  text-align: start;
-  display: flex;
-  align-items: center;
-  color:red;
-  font-size: 40px;
-  font-weight:600;
-  padding-left:5px;
-}
-.usage{
-  color:red;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size:small;
-}
-.year{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.year span{
-  width:80%;
-  height:70%;
-  border-radius: 20px;
-  background-color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size:xx-small;
-  color:#ff8103;
-}
-/*bar CSS*/
-#bar{
-  display: flex;
-  flex-direction: column;
-  position:relative;
+img{
   width:100%;
   height:100%;
-  & span:first-child{
-    background-color: magenta;
-    padding-top:5px;
-  }
-  & span:last-child{
-    background-color: blue;
-    padding-top:5px;
-  }
-}
-#bar span{
-  width:100%;
-  height:50%;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  z-index: 0;
-  display: flex;
-  align-items: center;
-}
-#bar span:last-child{
-  transform: rotate(180deg);
-}
-.icon{
-  position: absolute;
-  align-self: center;
-  top:47%;
-  font-size:2em;
-  z-index: 1;
-}
-
-/*menu section CSS*/
-#journals{
-  display: grid;
-  grid-template-rows: 35fr 453fr;
-  background-color: red;
-}
-#journals .menus{
-  display: flex;
-  justify-content: space-around;
-  align-self: center;
-}
-#journals .contents{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto-fit auto;
-}
-.content{
-  justify-self:center;
-  border-top: 1px solid black;
-  color:black;
-  width:90%;
-  height:auto;
-}
-.content .title{
-  color:black;
-  margin:0px;
-  font-size:large;
-  font-weight: 500;
-  padding-left:0px;
-}
-.info{
-  font-size:smaller;
-  margin:0px;
 }
